@@ -14,6 +14,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-weight: bolder;
+
 	vertical-align: baseline;
 }
 
@@ -41,6 +43,11 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.resume {
+	margin-bottom: 20px;
+	
 }
 
 body {
@@ -97,15 +104,12 @@ html {
 
 body {
 	height: 100%;
-	background-color: #ffffff;
-	background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-	background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-	background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-	background-repeat: repeat, no-repeat, no-repeat;
-	background-size: 100px 100px, cover, cover;
-	background-position: top left, center center, bottom center;
-	background-attachment: fixed, fixed, fixed;
+	background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	background-repeat: no-repeat;
+	
 }
 
 body:after {
@@ -138,6 +142,10 @@ body.is-preload:after {
 
 /* Type */
 
+
+.icons {
+	color: #110e0f;
+}
 body, input, select, textarea {
 	color: #414f57;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -178,7 +186,7 @@ a:before {
 }
 
 a:hover {
-	color: #ff7496;
+	color: #110e0f;
 }
 
 strong, b {
@@ -187,6 +195,7 @@ strong, b {
 
 em, i {
 	font-style: italic;
+	
 }
 
 p {
@@ -653,6 +662,7 @@ ul.icons {
 	list-style: none;
 	padding-left: 0;
 	margin-top: -0.675em;
+	
 }
 
 ul.icons li {
